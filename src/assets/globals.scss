@@ -1,0 +1,13 @@
+.g-error {
+  color: red;
+
+  &::before {
+    content: "⚠️";
+    margin-right: 0.2em;
+  }
+
+  &::after {
+    content: "⚠️";
+    margin-left: 0.2em;
+  }
+}
