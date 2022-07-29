@@ -1,3 +1,3 @@
 <template>
-  <div class="v-loading">loading...</div>
+  <div class="c-loading">loading...</div>
 </template>

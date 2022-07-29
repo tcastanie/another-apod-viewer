@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useStore = defineStore("apod", {
   state: () => ({
     baseUrl: "https://api.nasa.gov/planetary/apod",
-    apiKey: import.meta.env.VITE_NASA_API_KEY ?? "DEMO_KEY", // TODO: get real API key
+    apiKey: import.meta.env.VITE_NASA_API_KEY ?? "DEMO_KEY",
   }),
   getters: {
     getTodayUrl(state) {
