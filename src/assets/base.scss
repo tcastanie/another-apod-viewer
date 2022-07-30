@@ -1,0 +1,13 @@
+:root {
+  --moon: #abb8c3;
+  --black: #060309;
+  --white: #fff;
+}
+
+:root[data-theme="dark"] {
+  --primary: #f84f00;
+  --primary-hover: #ff650b;
+  --primary-focus: #0000;
+  --primary-inverse: #fff;
+  --card-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
+}

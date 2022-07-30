@@ -4,6 +4,7 @@ export const useStore = defineStore("apod", {
   state: () => ({
     baseUrl: "https://api.nasa.gov/planetary/apod",
     apiKey: import.meta.env.VITE_NASA_API_KEY ?? "DEMO_KEY",
+    apodsAlreadyFetched: {},
   }),
   getters: {
     getTodayUrl(state) {
@@ -24,7 +25,11 @@ export const useStore = defineStore("apod", {
       url += `?api_key=${this.apiKey}`;
       url += `&start_date=${date1 > date2 ? date2 : date1}`;
       url += `&end_date=${date1 > date2 ? date1 : date2}`;
+      url += `&thumbs=true`;
       return url;
+    },
+    saveApod(apod) {
+      this.apodsAlreadyFetched[apod.date] = apod;
     },
   },
 });

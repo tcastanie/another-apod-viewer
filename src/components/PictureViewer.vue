@@ -20,14 +20,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.c-picture-viewer {
-  position: relative;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-</style>

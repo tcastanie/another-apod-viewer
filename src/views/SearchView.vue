@@ -1,5 +1,4 @@
 <template>
-  SEARCH
   <SearchInput @search-results="updateList" />
   <SearchList :list="apodList" />
 </template>
@@ -30,9 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.v-search {
-  position: relative;
-}
-</style>

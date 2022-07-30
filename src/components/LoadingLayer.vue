@@ -1,3 +1,3 @@
 <template>
-  <div class="c-loading">loading...</div>
+  <article aria-busy="true" class="c-loading">Loading...</article>
 </template>

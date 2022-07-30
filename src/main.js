@@ -3,8 +3,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 
-import "./assets/modern-normalize.min.css";
-import "./assets/globals.scss";
+import "./assets/base.scss";
 
 const pinia = createPinia();
 const app = createApp(App);

@@ -1,29 +1,45 @@
 <template>
   <LoadingLayer v-if="loading" />
-  <div v-else-if="errorMessage" class="g-error">{{ errorMessage }}</div>
+  <ErrorLayer v-else-if="errorMessage">{{ errorMessage }}</ErrorLayer>
   <div v-else class="c-apod-viewer">
-    <PictureViewer :img-url="apod.url" :full-url="apod.hdurl" />
-    <h1 class="c-apod-viewer__title">{{ apod.title }}</h1>
-    <div class="c-apod-viewer__date">{{ apod.date }}</div>
-    <div class="c-apod-viewer__description">{{ apod.explanation }}</div>
-    <div class="c-apod-viewer__copyright">{{ apod.copyright }}</div>
+    <PictureViewer
+      v-if="apod.media_type === 'image'"
+      :img-url="apod.url"
+      :full-url="apod.hdurl"
+    />
+    <VideoViewer
+      v-else-if="apod.media_type === 'video'"
+      :video-url="apod.url"
+    />
+    <div class="headings">
+      <h1>{{ apod.title }}</h1>
+      <h2>{{ apod.date }}</h2>
+    </div>
+    <div class="c-apod-viewer__description"></div>
+    <div class="c-apod-viewer__copyright"></div>
+    <blockquote>
+      <b>Explanation:</b> {{ apod.explanation }}
+      <footer>
+        <cite>© {{ apod.copyright }}</cite>
+      </footer>
+    </blockquote>
   </div>
 </template>
 
 <script>
 import { useStore } from "@/stores/apod";
 import LoadingLayer from "./LoadingLayer.vue";
+import ErrorLayer from "./ErrorLayer.vue";
 import PictureViewer from "./PictureViewer.vue";
+import VideoViewer from "./VideoViewer.vue";
 export default {
   components: {
     LoadingLayer,
+    ErrorLayer,
     PictureViewer,
+    VideoViewer,
   },
   props: {
-    apodProp: {
-      type: Object,
-      default: null,
-    },
     dateParam: {
       type: String,
       default: null,
@@ -41,17 +57,20 @@ export default {
     };
   },
   created() {
-    if (this.apodProp !== null) {
-      this.apod = this.apodProp;
+    if (this.store.apodsAlreadyFetched[this.dateParam]) {
+      this.apod = this.store.apodsAlreadyFetched[this.dateParam];
     } else {
+      this.fetchApod();
+    }
+  },
+  methods: {
+    fetchApod() {
       this.loading = true;
       const url = this.dateParam
         ? this.store.getUrlWithDate(this.dateParam)
         : this.store.getTodayUrl;
       this.fetchUrl(url);
-    }
-  },
-  methods: {
+    },
     fetchUrl(url) {
       fetch(url)
         .then(async (response) => {

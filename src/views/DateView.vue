@@ -1,7 +1,5 @@
 <template>
-  <!-- <ApodViewer v-if="" :apod-prop="" /> -->
-  <ApodViewer v-if="$route.params.date" :date-param="$route.params.date" />
-  <!-- TODO : 👆 replace v-if by v-else-if  -->
+  <ApodViewer :date-param="$route.params.date" />
 </template>
 
 <script>
