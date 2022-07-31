@@ -49,9 +49,10 @@ export default {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-      background-color: var(--moon);
-      color: var(--black);
+    &:hover,
+    &:active {
+      background-color: var(--secondary);
+      color: var(--secondary-inverse);
       transform: scale(101%);
     }
   }

@@ -68,9 +68,10 @@ export default {
     };
   },
   computed: {
-    dateFirstDayOfCurrentMonth() {
+    dateFourDaysBefore() {
       const date = new Date();
-      date.setDate(1);
+      const day = date.getDate();
+      date.setDate(day - 4);
       return date.toISOString().split("T")[0];
     },
     dateYesterday() {
@@ -80,7 +81,7 @@ export default {
     },
   },
   mounted() {
-    this.searchInput1 = this.dateFirstDayOfCurrentMonth;
+    this.searchInput1 = this.dateFourDaysBefore;
     this.searchInput2 = this.dateYesterday;
   },
   methods: {

@@ -1,4 +1,5 @@
 <template>
+  <h1>Search</h1>
   <SearchInput @search-results="updateList" />
   <SearchList :list="apodList" />
 </template>

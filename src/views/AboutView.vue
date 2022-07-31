@@ -1,13 +1,4 @@
 <template>
-  <div class="v-about">ABOUT</div>
+  <h1>About</h1>
+  <!-- TODO About page -->
 </template>
-
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped>
-.v-about {
-  position: relative;
-}
-</style>

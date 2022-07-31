@@ -19,7 +19,7 @@
     <div class="c-apod-viewer__copyright"></div>
     <blockquote>
       <b>Explanation:</b> {{ apod.explanation }}
-      <footer>
+      <footer v-if="apod.copyright">
         <cite>© {{ apod.copyright }}</cite>
       </footer>
     </blockquote>
