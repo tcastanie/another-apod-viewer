@@ -39,7 +39,10 @@
         Search for a range of dates
       </label>
     </fieldset>
-    <button :disabled="rangeBetweenDates > 20" @click.prevent="startSearch">
+    <button
+      :disabled="isRange && rangeBetweenDates > 20"
+      @click.prevent="startSearch"
+    >
       {{
         isRange
           ? rangeBetweenDates > 20
