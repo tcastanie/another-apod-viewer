@@ -5,8 +5,7 @@ $primary-hue: 20 !default;
 @import "@picocss/pico/scss/pico";
 
 :root[data-theme="dark"] {
-  --primary-focus: transparent;
-  --secondary-focus: transparent;
+  --max-picture-height: 600px;
   --card-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
   --header-background-color: #{color.mix($black, $grey-900, 55%)};
 }

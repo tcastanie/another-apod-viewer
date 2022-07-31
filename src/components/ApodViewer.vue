@@ -91,9 +91,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.c-apod-viewer {
-  position: relative;
-}
-</style>

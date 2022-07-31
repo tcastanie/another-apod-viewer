@@ -39,8 +39,14 @@
         Search for a range of dates
       </label>
     </fieldset>
-    <button @click.prevent="startSearch">
-      {{ isRange ? "Search" : "Go" }}
+    <button :disabled="rangeBetweenDates > 20" @click.prevent="startSearch">
+      {{
+        isRange
+          ? rangeBetweenDates > 20
+            ? "❌ Range is too big ! (> 20)"
+            : "🔍 Search"
+          : "🪐 Go"
+      }}
     </button>
   </form>
   <LoadingLayer v-if="loading" />
@@ -79,6 +85,13 @@ export default {
       date.setDate(date.getDate() - 1);
       return date.toISOString().split("T")[0];
     },
+    rangeBetweenDates() {
+      const date1 = new Date(this.searchInput1);
+      const date2 = new Date(this.searchInput2);
+      const diff = Math.abs(date2.getTime() - date1.getTime());
+      const days = Math.ceil(diff / (1000 * 3600 * 24));
+      return days;
+    },
   },
   mounted() {
     this.searchInput1 = this.dateFourDaysBefore;
@@ -87,7 +100,6 @@ export default {
   methods: {
     startSearch() {
       if (!this.isRange) {
-        console.log(`searching for ${this.searchInput1}`);
         this.$router.push({
           name: "date",
           params: { date: this.searchInput1 },

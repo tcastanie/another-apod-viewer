@@ -48,7 +48,7 @@ export default {
     img {
       max-width: 100%;
       height: auto;
-      max-height: 600px;
+      max-height: var(--max-picture-height);
     }
   }
 }
