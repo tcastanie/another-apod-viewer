@@ -1,12 +1,10 @@
-![logo](logo.mdr.png)
-
-# Another APOD viewer
+![another-apod-viewer](./assets/social.png)
 
 [![codecov](https://codecov.io/gh/tcastanie/another-apod-viewer/branch/main/graph/badge.svg?token=F0CATV0Q8D)](https://codecov.io/gh/tcastanie/another-apod-viewer)
 
 Small personal project to improve my skills on Vue, its ecosystem, and everything else. Mainly Vue 3 and its Composition API, Vite, Pinia, Vitest, Github CI... all of this ready to use in a developer-friendly environment.
 
-## Project Setup
+## ![favicon](./assets/favicon.24.png)&nbsp; Project Setup
 
 ```sh
 npm install
@@ -38,8 +36,12 @@ npm run test:c8           # with coverage report
 npm run lint
 ```
 
-## Recommended IDE Setup
+## ![favicon](./assets/favicon.24.png)&nbsp; Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
 See `/.vscode` folder for config.
+
+## ![favicon](./assets/favicon.24.png)&nbsp; Assets from the future
+
+![logo](./assets/logo.png)
