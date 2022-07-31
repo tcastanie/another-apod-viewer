@@ -1,4 +1,6 @@
-# Another APOD viewer (🚧 WIP)
+# Another APOD viewer
+
+Small personal project to improve my skills on Vue and its ecosystem: Vue 3 and its Composition API, Vite, Pinia and Vitest, ready to use in a developer-friendly environment.
 
 ## Project Setup
 
@@ -16,6 +18,7 @@ npm run dev
 
 ```sh
 npm run build
+npm run build:report      # with nice bundle visualization
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
