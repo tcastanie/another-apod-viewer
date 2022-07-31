@@ -1,8 +1,10 @@
+![logo](logo.mdr.png)
+
 # Another APOD viewer
 
 [![codecov](https://codecov.io/gh/tcastanie/another-apod-viewer/branch/main/graph/badge.svg?token=F0CATV0Q8D)](https://codecov.io/gh/tcastanie/another-apod-viewer)
 
-Small personal project to improve my skills on Vue and its ecosystem: Vue 3 and its Composition API, Vite, Pinia and Vitest, ready to use in a developer-friendly environment.
+Small personal project to improve my skills on Vue, its ecosystem, and everything else. Mainly Vue 3 and its Composition API, Vite, Pinia, Vitest, Github CI... all of this ready to use in a developer-friendly environment.
 
 ## Project Setup
 
