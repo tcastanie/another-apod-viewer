@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`DateView > renders properly 1`] = `
+"<apod-viewer-stub dateparam=\\"2022-08-03\\" data-v-464d9542=\\"\\"></apod-viewer-stub>
+<div class=\\"previous-next\\" data-v-464d9542=\\"\\"><a href=\\"/2022-08-02\\" class=\\"\\" data-v-464d9542=\\"\\">Previous</a>
+  <!--v-if-->
+</div>"
+`;

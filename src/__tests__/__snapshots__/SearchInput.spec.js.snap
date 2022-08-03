@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`SearchInput > renders properly 1`] = `
+"<form>
+  <div class=\\"grid\\"><label for=\\"date1\\">Go to specific date picture <input id=\\"date1\\" name=\\"date1\\" type=\\"date\\" min=\\"1995-06-16\\"></label>
+    <div></div>
+    <!--v-if-->
+  </div>
+  <fieldset><label for=\\"range\\"><input id=\\"range\\" type=\\"checkbox\\" name=\\"range\\" role=\\"switch\\"> Search for a range of dates </label></fieldset><button>🪐 Go</button>
+</form>
+<!--v-if-->
+<!--v-if-->"
+`;

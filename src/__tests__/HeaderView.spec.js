@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from "vitest";
 import { mount } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
 import { routes } from "@/router/index.js";
-import HeaderView from "../../views/HeaderView.vue";
+import HeaderView from "@/views/HeaderView.vue";
 
 let router;
 beforeEach(async () => {
@@ -21,6 +21,7 @@ describe("HeaderView", async () => {
         plugins: [router],
       },
     });
+    expect(wrapper.html()).toMatchSnapshot();
     expect(wrapper.text()).toContain("Another APOD viewer");
     expect(wrapper.text()).toContain("Home");
     expect(wrapper.text()).toContain("Search");

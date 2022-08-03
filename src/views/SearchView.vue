@@ -17,12 +17,6 @@ export default {
       apodList: [],
     };
   },
-  computed: {
-    dateToday() {
-      const date = new Date();
-      return date.toISOString().split("T")[0];
-    },
-  },
   methods: {
     updateList(e) {
       this.apodList = e;

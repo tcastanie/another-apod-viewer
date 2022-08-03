@@ -27,6 +27,8 @@ export default defineConfig(({ mode }) => {
     coverage: {
       reporter: ["text-summary", "text", "json", "html"],
     },
+    globals: true,
+    setupFiles: ["./setupVitest.js"],
   };
 
   return {

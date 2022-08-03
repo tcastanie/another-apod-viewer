@@ -17,15 +17,10 @@ export default {
   },
   computed: {
     getPageDate() {
-      const now = new Date();
+      var tzoffset = new Date().getTimezoneOffset() * 60000;
       const parts = this.$route.params.date.split("-");
-      const date = new Date(
-        parts[0],
-        parts[1] - 1,
-        parts[2],
-        now.getHours(),
-        now.getMinutes()
-      );
+      let date = new Date(parts[0], parts[1] - 1, parts[2]);
+      date = new Date(date.getTime() - tzoffset);
       return date;
     },
     datePreviousDay() {

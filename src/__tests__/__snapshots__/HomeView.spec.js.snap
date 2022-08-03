@@ -1,0 +1,6 @@
+// Vitest Snapshot v1
+
+exports[`HomeView > renders properly 1`] = `
+"<apod-viewer-stub></apod-viewer-stub>
+<a href=\\"/2022-08-02\\" class=\\"\\">Previous</a>"
+`;

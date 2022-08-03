@@ -1,0 +1,19 @@
+// Vitest Snapshot v1
+
+exports[`HeaderView > renders properly 1`] = `
+"<nav class=\\"container-fluid\\" data-v-6bc83892=\\"\\">
+  <ul data-v-6bc83892=\\"\\">
+    <li data-v-6bc83892=\\"\\">Another APOD viewer</li>
+  </ul>
+  <ul data-v-6bc83892=\\"\\">
+    <li data-v-6bc83892=\\"\\"><a aria-current=\\"page\\" href=\\"/\\" class=\\"router-link-active router-link-exact-active\\" data-v-6bc83892=\\"\\">Home</a></li>
+    <li data-v-6bc83892=\\"\\"><a href=\\"/search\\" class=\\"\\" data-v-6bc83892=\\"\\">Search</a></li>
+    <li data-v-6bc83892=\\"\\"><a href=\\"/about\\" class=\\"\\" data-v-6bc83892=\\"\\">About</a></li>
+  </ul>
+  <ul data-v-6bc83892=\\"\\">
+    <li data-v-6bc83892=\\"\\"><a href=\\"https://github.com/tcastanie/another-apod-viewer\\" target=\\"_blank\\" class=\\"secondary\\" data-v-6bc83892=\\"\\"><svg data-v-6bc83892=\\"\\">
+          <path d=\\"M12 2A10 10 0 0 0 2 12a10 10 0 0 0 6.8 9.5c.5 0 .7-.2.7-.5v-1.7C6.7 20 6.1 18 6.1 18c-.4-1.2-1-1.5-1-1.5-1-.6 0-.6 0-.6 1 0 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9 0-.7.3-1.1.6-1.4-2.2-.2-4.6-1-4.6-4.9 0-1.1.4-2 1-2.7 0-.3-.4-1.3.2-2.7 0 0 .8-.2 2.7 1a9.4 9.4 0 0 1 5 0c2-1.2 2.8-1 2.8-1 .5 1.4.1 2.4 0 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.5 5 .4.2.7.8.7 1.8V21c0 .3.2.6.7.5 4-1.3 6.8-5 6.8-9.5A10 10 0 0 0 12 2Z\\" data-v-6bc83892=\\"\\"></path>
+        </svg></a></li>
+  </ul>
+</nav>"
+`;
