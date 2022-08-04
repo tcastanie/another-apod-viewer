@@ -29,7 +29,7 @@
     "postcss-html": "1.5.0",
     "prettier": "2.7.1",
     "rollup-plugin-visualizer": "5.7.1",
-    "sass": "1.54.2",
+    "sass": "1.54.3",
     "stylelint": "14.9.1",
     "stylelint-config-idiomatic-order": "8.1.0",
     "stylelint-config-recommended-scss": "7.0.0",
