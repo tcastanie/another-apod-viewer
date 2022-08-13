@@ -2,7 +2,12 @@
   <LoadingLayer v-if="!imgLoaded" />
   <div class="c-picture-viewer">
     <Transition>
-      <a v-show="imgLoaded" class="c-picture-viewer__img" :href="fullUrl">
+      <a
+        v-show="imgLoaded"
+        class="c-picture-viewer__img"
+        :href="fullUrl"
+        tagret="_blank"
+      >
         <img :src="imgUrl" @load="onImgLoad" />
       </a>
     </Transition>
