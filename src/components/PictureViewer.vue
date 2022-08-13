@@ -6,7 +6,7 @@
         v-show="imgLoaded"
         class="c-picture-viewer__img"
         :href="fullUrl"
-        tagret="_blank"
+        target="_blank"
       >
         <img :src="imgUrl" @load="onImgLoad" />
       </a>

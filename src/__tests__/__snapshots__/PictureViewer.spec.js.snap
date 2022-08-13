@@ -3,6 +3,6 @@
 exports[`PictureViewer > renders properly 1`] = `
 "<article aria-busy=\\"true\\" class=\\"c-loading\\" data-v-4320971b=\\"\\" data-v-eea99233=\\"\\">Loading...</article>
 <div class=\\"c-picture-viewer\\" data-v-eea99233=\\"\\">
-  <transition-stub data-v-eea99233=\\"\\"><a class=\\"c-picture-viewer__img\\" href=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_1024.jpg\\" data-v-eea99233=\\"\\" style=\\"display: none;\\"><img src=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_960.jpg\\" data-v-eea99233=\\"\\"></a></transition-stub>
+  <transition-stub data-v-eea99233=\\"\\"><a class=\\"c-picture-viewer__img\\" href=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_1024.jpg\\" target=\\"_blank\\" data-v-eea99233=\\"\\" style=\\"display: none;\\"><img src=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_960.jpg\\" data-v-eea99233=\\"\\"></a></transition-stub>
 </div>"
 `;
