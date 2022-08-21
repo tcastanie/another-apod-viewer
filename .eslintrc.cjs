@@ -10,5 +10,6 @@ module.exports = {
   ],
   rules: {
     "sort-imports": "warn",
+    "object-shorthand": "warn",
   },
 };
