@@ -19,6 +19,7 @@
         <a
           href="https://github.com/tcastanie/another-apod-viewer"
           target="_blank"
+          rel="noopener noreferrer"
           class="secondary"
         >
           <svg>

@@ -2,5 +2,5 @@
 
 exports[`HomeView > renders properly 1`] = `
 "<apod-viewer-stub></apod-viewer-stub>
-<a href=\\"/2022-08-12\\" class=\\"\\">Previous</a>"
+<a href=\\"/2022-08-20\\" class=\\"\\">Previous</a>"
 `;

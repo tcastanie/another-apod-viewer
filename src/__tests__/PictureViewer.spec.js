@@ -7,8 +7,8 @@ describe("PictureViewer", () => {
   it("renders properly", () => {
     const wrapper = mount(PictureViewer, {
       props: {
-        imgUrl: imgUrl,
-        fullUrl: fullUrl,
+        imgUrl,
+        fullUrl,
       },
     });
     expect(wrapper.html()).toMatchSnapshot();
@@ -17,8 +17,8 @@ describe("PictureViewer", () => {
   it("display image correctly ", () => {
     const wrapper = mount(PictureViewer, {
       props: {
-        imgUrl: imgUrl,
-        fullUrl: fullUrl,
+        imgUrl,
+        fullUrl,
       },
     });
     expect(wrapper.vm.imgLoaded).toBe(false);

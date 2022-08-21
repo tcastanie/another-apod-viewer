@@ -9,7 +9,7 @@ let router;
 beforeEach(async () => {
   router = createRouter({
     history: createWebHistory(),
-    routes: routes,
+    routes,
   });
 });
 
@@ -98,6 +98,6 @@ describe("SearchInput", () => {
     await wrapper.find("#range").setValue(true);
     await wrapper.find("button").trigger("click");
     await flushPromises();
-    // TODO: check if the apods are correctly loaded
+    // Check if the apods are correctly loaded
   });
 });

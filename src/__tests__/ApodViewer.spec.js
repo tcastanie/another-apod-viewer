@@ -26,7 +26,6 @@ describe("ApodViewer", () => {
         ],
       },
     });
-    // TODO
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
