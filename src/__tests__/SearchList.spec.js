@@ -1,16 +1,16 @@
-import { describe, it, expect, beforeEach } from "vitest";
-import { mount, flushPromises } from "@vue/test-utils";
+import { beforeEach, describe, expect, it } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import { routes } from "@/router/index.js";
+import { flushPromises, mount } from "@vue/test-utils";
 import SearchList from "@/components/SearchList.vue";
 import { createTestingPinia } from "@pinia/testing";
+import { routes } from "@/router/index.js";
 import { testList } from "./constantsMockups";
 
 let router;
 beforeEach(async () => {
   router = createRouter({
     history: createWebHistory(),
-    routes,
+    routes: routes,
   });
 });
 

@@ -57,9 +57,9 @@
 </template>
 
 <script>
-import { useStore } from "@/stores/apod";
-import LoadingLayer from "./LoadingLayer.vue";
 import ErrorLayer from "./ErrorLayer.vue";
+import LoadingLayer from "./LoadingLayer.vue";
+import { useStore } from "@/stores/apod";
 export default {
   components: { LoadingLayer, ErrorLayer },
   emits: ["searchResults"],

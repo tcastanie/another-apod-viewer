@@ -1,8 +1,8 @@
-import { describe, it, expect, beforeEach } from "vitest";
-import { mount } from "@vue/test-utils";
+import { beforeEach, describe, expect, it } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import { routes } from "@/router/index.js";
 import HeaderView from "@/views/HeaderView.vue";
+import { mount } from "@vue/test-utils";
+import { routes } from "@/router/index.js";
 
 let router;
 beforeEach(async () => {

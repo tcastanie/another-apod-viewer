@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
-import { mount } from "@vue/test-utils";
+import { describe, expect, it } from "vitest";
 import ApodViewer from "@/components/ApodViewer.vue";
 import { createTestingPinia } from "@pinia/testing";
+import { mount } from "@vue/test-utils";
 import { testList } from "./constantsMockups";
 
 describe("ApodViewer", () => {

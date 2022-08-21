@@ -1,7 +1,7 @@
-import { describe, it, expect } from "vitest";
-import { mount } from "@vue/test-utils";
+import { describe, expect, it } from "vitest";
+import { fullUrl, imgUrl } from "./constantsMockups";
 import PictureViewer from "@/components/PictureViewer.vue";
-import { imgUrl, fullUrl } from "./constantsMockups";
+import { mount } from "@vue/test-utils";
 
 describe("PictureViewer", () => {
   it("renders properly", () => {

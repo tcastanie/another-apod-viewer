@@ -1,8 +1,8 @@
-import { describe, it, expect, beforeEach } from "vitest";
-import { mount } from "@vue/test-utils";
+import { beforeEach, describe, expect, it } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import { routes } from "@/router/index.js";
 import SearchView from "@/views/SearchView.vue";
+import { mount } from "@vue/test-utils";
+import { routes } from "@/router/index.js";
 import { testList } from "./constantsMockups";
 
 let router;

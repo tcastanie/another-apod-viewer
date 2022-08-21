@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import { useStore } from "@/stores/apod";
 import ApodViewer from "../components/ApodViewer.vue";
+import { useStore } from "@/stores/apod";
 export default {
   components: { ApodViewer },
   setup() {
