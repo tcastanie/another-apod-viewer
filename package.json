@@ -19,7 +19,7 @@
   "devDependencies": {
     "@pinia/testing": "0.0.13",
     "@rushstack/eslint-patch": "1.1.4",
-    "@vitejs/plugin-vue": "3.0.1",
+    "@vitejs/plugin-vue": "3.0.3",
     "@vue/eslint-config-prettier": "7.0.0",
     "@vue/test-utils": "2.0.2",
     "c8": "7.12.0",
