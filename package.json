@@ -28,7 +28,7 @@
     "jsdom": "20.0.0",
     "postcss-html": "1.5.0",
     "prettier": "2.7.1",
-    "rollup-plugin-visualizer": "5.7.1",
+    "rollup-plugin-visualizer": "5.8.0",
     "sass": "1.54.8",
     "stylelint": "14.11.0",
     "stylelint-config-idiomatic-order": "8.1.0",
