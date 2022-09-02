@@ -14,7 +14,7 @@
     "@picocss/pico": "1.5.3",
     "pinia": "2.0.21",
     "vue": "3.2.38",
-    "vue-router": "4.1.3"
+    "vue-router": "4.1.5"
   },
   "devDependencies": {
     "@pinia/testing": "0.0.14",
