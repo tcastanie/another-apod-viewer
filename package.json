@@ -32,7 +32,7 @@
     "rollup-plugin-visualizer": "5.8.3",
     "sass": "1.55.0",
     "stylelint": "14.14.0",
-    "stylelint-config-idiomatic-order": "8.1.0",
+    "stylelint-config-idiomatic-order": "9.0.0",
     "stylelint-config-recommended-scss": "8.0.0",
     "stylelint-config-recommended-vue": "1.4.0",
     "stylelint-config-standard-scss": "5.0.0",
