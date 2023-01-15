@@ -24,7 +24,7 @@
     "@vue/eslint-config-prettier": "7.0.0",
     "@vue/test-utils": "2.2.2",
     "c8": "7.12.0",
-    "eslint": "8.31.0",
+    "eslint": "8.32.0",
     "eslint-plugin-vue": "9.9.0",
     "jsdom": "20.0.3",
     "postcss-html": "1.5.0",
