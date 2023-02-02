@@ -14,7 +14,7 @@
     "@picocss/pico": "1.5.7",
     "@vitest/coverage-c8": "0.28.3",
     "pinia": "2.0.30",
-    "vue": "3.2.45",
+    "vue": "3.2.47",
     "vue-router": "4.1.6"
   },
   "devDependencies": {
