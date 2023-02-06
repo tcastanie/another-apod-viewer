@@ -1,14 +1,14 @@
 <template>
   <div class="c-search-list">
     <article
-      v-for="apod in list"
+      v-for="apod in listComputed"
       :key="apod.date"
       class="c-search-list__item"
       @click="openApod(apod)"
     >
       <div
         class="c-search-list__item-preview"
-        :style="{ backgroundImage: `url(${apod.thumbnail_url ?? apod.url})` }"
+        :style="{ backgroundImage: `url(${apod.img_url})` }"
         :alt="apod.title"
       ></div>
       <h5>{{ apod.title }}</h5>
@@ -29,6 +29,16 @@ export default {
   setup() {
     const store = useStore();
     return { store };
+  },
+  computed: {
+    listComputed() {
+      return this.list.map((apod) => {
+        return {
+          ...apod,
+          img_url: JSON.stringify(apod.thumbnail_url ?? apod.url),
+        };
+      });
+    },
   },
   methods: {
     openApod(apod) {
