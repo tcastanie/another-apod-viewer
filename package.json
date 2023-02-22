@@ -39,6 +39,6 @@
     "stylelint-order": "6.0.2",
     "vite": "3.2.5",
     "vitest": "0.28.5",
-    "vitest-fetch-mock": "0.2.1"
+    "vitest-fetch-mock": "0.2.2"
   }
 }
