@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@picocss/pico": "1.5.8",
+    "@picocss/pico": "1.5.9",
     "@vitest/coverage-c8": "0.29.8",
     "pinia": "2.0.34",
     "vue": "3.2.47",
