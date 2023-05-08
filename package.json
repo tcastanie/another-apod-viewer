@@ -18,7 +18,7 @@
     "vue-router": "4.1.6"
   },
   "devDependencies": {
-    "@pinia/testing": "0.0.16",
+    "@pinia/testing": "0.1.0",
     "@rushstack/eslint-patch": "1.2.0",
     "@vitejs/plugin-vue": "3.2.0",
     "@vue/eslint-config-prettier": "7.1.0",
