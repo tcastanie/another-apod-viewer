@@ -7,12 +7,12 @@
     "build:report": "vite build --mode report",
     "preview": "vite preview --port 4173",
     "test": "vitest --environment jsdom",
-    "test:c8": "vitest --environment jsdom --coverage",
+    "test:c8": "vitest --environment jsdom --coverage.enabled --coverage.provider c8",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@picocss/pico": "1.5.10",
-    "@vitest/coverage-c8": "0.29.8",
+    "@vitest/coverage-c8": "0.33.0",
     "pinia": "2.1.4",
     "vue": "3.3.4",
     "vue-router": "4.2.4"
@@ -38,7 +38,7 @@
     "stylelint-config-standard-scss": "6.1.0",
     "stylelint-order": "6.0.3",
     "vite": "3.2.7",
-    "vitest": "0.29.8",
+    "vitest": "0.33.0",
     "vitest-fetch-mock": "0.2.2"
   }
 }
