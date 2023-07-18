@@ -7,7 +7,7 @@
     "build:report": "vite build --mode report",
     "preview": "vite preview --port 4173",
     "test": "vitest --environment jsdom",
-    "test:c8": "vitest --environment jsdom --coverage",
+    "test:c8": "vitest --environment jsdom --coverage.enabled --coverage.provider c8",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
