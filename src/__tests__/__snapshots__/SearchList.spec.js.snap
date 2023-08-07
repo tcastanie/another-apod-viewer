@@ -1,13 +1,13 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`SearchList > renders properly 1`] = `
-"<div class=\\"c-search-list\\" data-v-cda856e3=\\"\\">
-  <article class=\\"c-search-list__item\\" data-v-cda856e3=\\"\\">
-    <div class=\\"c-search-list__item-preview\\" style=\\"background-image: url(https://apod.nasa.gov/apod/image/2207/AS11JK44-6633-34_1100px.jpg);\\" alt=\\"The Eagle Rises\\" data-v-cda856e3=\\"\\"></div>
+"<div data-v-cda856e3=\\"\\" class=\\"c-search-list\\">
+  <article data-v-cda856e3=\\"\\" class=\\"c-search-list__item\\">
+    <div data-v-cda856e3=\\"\\" class=\\"c-search-list__item-preview\\" style=\\"background-image: url(https://apod.nasa.gov/apod/image/2207/AS11JK44-6633-34_1100px.jpg);\\" alt=\\"The Eagle Rises\\"></div>
     <h5 data-v-cda856e3=\\"\\">The Eagle Rises</h5><small data-v-cda856e3=\\"\\">2022-07-30</small>
   </article>
-  <article class=\\"c-search-list__item\\" data-v-cda856e3=\\"\\">
-    <div class=\\"c-search-list__item-preview\\" style=\\"background-image: url(https://apod.nasa.gov/apod/image/2207/M94_Hubble_960.jpg);\\" alt=\\"Starburst Galaxy M94 from Hubble\\" data-v-cda856e3=\\"\\"></div>
+  <article data-v-cda856e3=\\"\\" class=\\"c-search-list__item\\">
+    <div data-v-cda856e3=\\"\\" class=\\"c-search-list__item-preview\\" style=\\"background-image: url(https://apod.nasa.gov/apod/image/2207/M94_Hubble_960.jpg);\\" alt=\\"Starburst Galaxy M94 from Hubble\\"></div>
     <h5 data-v-cda856e3=\\"\\">Starburst Galaxy M94 from Hubble</h5><small data-v-cda856e3=\\"\\">2022-07-31</small>
   </article>
 </div>"

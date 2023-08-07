@@ -1,8 +1,8 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`DateView > renders properly 1`] = `
-"<apod-viewer-stub dateparam=\\"2022-08-21\\" data-v-464d9542=\\"\\"></apod-viewer-stub>
-<div class=\\"previous-next\\" data-v-464d9542=\\"\\"><a href=\\"/2022-08-20\\" class=\\"\\" data-v-464d9542=\\"\\">Previous</a>
+"<apod-viewer-stub data-v-464d9542=\\"\\" dateparam=\\"2023-08-07\\"></apod-viewer-stub>
+<div data-v-464d9542=\\"\\" class=\\"previous-next\\"><a data-v-464d9542=\\"\\" href=\\"/2023-08-06\\" class=\\"\\">Previous</a>
   <!--v-if-->
 </div>"
 `;

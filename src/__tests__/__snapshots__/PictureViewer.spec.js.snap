@@ -1,8 +1,8 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`PictureViewer > renders properly 1`] = `
-"<article aria-busy=\\"true\\" class=\\"c-loading\\" data-v-4320971b=\\"\\" data-v-eea99233=\\"\\">Loading...</article>
-<div class=\\"c-picture-viewer\\" data-v-eea99233=\\"\\">
-  <transition-stub data-v-eea99233=\\"\\"><a class=\\"c-picture-viewer__img\\" href=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_1024.jpg\\" data-v-eea99233=\\"\\" style=\\"display: none;\\"><img src=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_960.jpg\\" data-v-eea99233=\\"\\"></a></transition-stub>
+"<article data-v-4320971b=\\"\\" data-v-eea99233=\\"\\" aria-busy=\\"true\\" class=\\"c-loading\\">Loading...</article>
+<div data-v-eea99233=\\"\\" class=\\"c-picture-viewer\\">
+  <transition-stub data-v-eea99233=\\"\\" appear=\\"false\\" persisted=\\"true\\" css=\\"true\\"><a data-v-eea99233=\\"\\" class=\\"c-picture-viewer__img\\" href=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_1024.jpg\\" style=\\"display: none;\\"><img data-v-eea99233=\\"\\" src=\\"https://apod.nasa.gov/apod/image/2207/SaturnIR_CassiniKakitsev_960.jpg\\"></a></transition-stub>
 </div>"
 `;

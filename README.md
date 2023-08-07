@@ -27,7 +27,7 @@ npm run build:report      # with nice bundle visualization
 
 ```sh
 npm run test
-npm run test:c8           # with coverage report
+npm run test:v8           # with coverage report
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
