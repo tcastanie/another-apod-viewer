@@ -111,7 +111,7 @@ export default {
         this.loading = true;
         const url = this.store.getUrlWithRange(
           this.searchInput1,
-          this.searchInput2
+          this.searchInput2,
         );
         fetch(url)
           .then(async (response) => {

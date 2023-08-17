@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
         open: true,
         gzipSize: true,
         brotliSize: true,
-      })
+      }),
     );
   }
 
