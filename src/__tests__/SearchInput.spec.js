@@ -6,7 +6,7 @@ import { createTestingPinia } from "@pinia/testing";
 import { routes } from "@/router/index.js";
 
 let router;
-beforeEach(async () => {
+beforeEach(() => {
   router = createRouter({
     history: createWebHistory(),
     routes,

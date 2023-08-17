@@ -61,6 +61,7 @@ import ErrorLayer from "./ErrorLayer.vue";
 import LoadingLayer from "./LoadingLayer.vue";
 import { useStore } from "@/stores/apod";
 export default {
+  name: "SearchInput",
   components: { LoadingLayer, ErrorLayer },
   emits: ["searchResults"],
   setup() {
@@ -123,6 +124,7 @@ export default {
             }
             this.loading = false;
             this.$emit("searchResults", data);
+            return Promise.resolve();
           })
           .catch((error) => {
             this.errorMessage = error;

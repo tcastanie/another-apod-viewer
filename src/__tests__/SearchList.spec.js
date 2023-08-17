@@ -7,7 +7,7 @@ import { routes } from "@/router/index.js";
 import { testList } from "./constantsMockups";
 
 let router;
-beforeEach(async () => {
+beforeEach(() => {
   router = createRouter({
     history: createWebHistory(),
     routes,
