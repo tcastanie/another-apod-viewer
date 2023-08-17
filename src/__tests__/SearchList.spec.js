@@ -1,8 +1,8 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
-import { flushPromises, mount } from "@vue/test-utils";
 import SearchList from "@/components/SearchList.vue";
 import { createTestingPinia } from "@pinia/testing";
+import { mount } from "@vue/test-utils";
 import { routes } from "@/router/index.js";
 import { testList } from "./constantsMockups";
 
@@ -38,8 +38,16 @@ describe("SearchList", () => {
         plugins: [router, createTestingPinia()],
       },
     });
-    wrapper.findAll("article")[0].trigger("click");
-    await flushPromises();
-    expect(wrapper.vm.$route.path).toBe(`/${testList[0].date}`);
+    const push = vi.spyOn(router, "push");
+    await wrapper.findAll("article")[0].trigger("click");
+    expect(push).toHaveBeenCalledOnce();
+    expect(push).toHaveBeenCalledWith(
+      expect.objectContaining({
+        name: "date",
+        params: {
+          date: testList[0].date,
+        },
+      }),
+    );
   });
 });

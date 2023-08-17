@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { createRouter, createWebHistory } from "vue-router";
 import { flushPromises, mount } from "@vue/test-utils";
 import SearchInput from "@/components/SearchInput.vue";
@@ -82,9 +82,17 @@ describe("SearchInput", () => {
         plugins: [router, createTestingPinia()],
       },
     });
+    const push = vi.spyOn(router, "push");
     await wrapper.find("button").trigger("click");
-    await flushPromises();
-    expect(wrapper.vm.$route.path).toBe(`/${fourDaysBeforeDate}`);
+    expect(push).toHaveBeenCalledOnce();
+    expect(push).toHaveBeenCalledWith(
+      expect.objectContaining({
+        name: "date",
+        params: {
+          date: fourDaysBeforeDate,
+        },
+      }),
+    );
   });
 
   it("search apods in range correctly", async () => {
