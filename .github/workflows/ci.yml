@@ -27,4 +27,4 @@ jobs:
     - name: Run tests and collect coverage
       run: npm run test:v8 -- -u
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
