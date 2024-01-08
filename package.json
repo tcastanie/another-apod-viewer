@@ -1,5 +1,6 @@
 {
   "name": "another-apod-viewer",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:expose": "vite --host",
@@ -13,7 +14,7 @@
   "dependencies": {
     "@picocss/pico": "1.5.11",
     "pinia": "2.1.7",
-    "vue": "3.3.4",
+    "vue": "3.4.6",
     "vue-router": "4.2.5"
   },
   "devDependencies": {
@@ -29,13 +30,13 @@
     "jsdom": "23.2.0",
     "postcss-html": "1.5.0",
     "prettier": "3.1.1",
-    "rollup-plugin-visualizer": "5.11.0",
+    "rollup-plugin-visualizer": "5.12.0",
     "sass": "1.69.7",
-    "stylelint": "15.11.0",
+    "stylelint": "16.1.0",
     "stylelint-config-idiomatic-order": "10.0.0",
-    "stylelint-config-recommended-scss": "13.1.0",
+    "stylelint-config-recommended-scss": "14.0.0",
     "stylelint-config-recommended-vue": "1.5.0",
-    "stylelint-config-standard-scss": "11.1.0",
+    "stylelint-config-standard-scss": "13.0.0",
     "stylelint-order": "6.0.4",
     "vite": "5.0.11",
     "vitest": "1.1.3",

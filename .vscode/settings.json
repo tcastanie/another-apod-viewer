@@ -3,7 +3,7 @@
   "eslint.validate": ["javascript"],
   "stylelint.validate": ["vue", "css", "scss"],
   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.stylelint": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
 }
