@@ -39,7 +39,7 @@ nav {
   z-index: 9;
   bottom: 0;
   width: 100%;
-  background-color: var(--header-background-color);
+  background-color: var(--pico-secondary-focus);
 }
 
 svg {

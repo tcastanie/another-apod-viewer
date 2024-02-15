@@ -72,8 +72,8 @@ export default {
 
     &:hover,
     &:active {
-      background-color: var(--secondary);
-      color: var(--secondary-inverse);
+      background-color: var(--pico-secondary-focus);
+      color: var(--pico-secondary-inverse);
       transform: scale(101%);
     }
   }

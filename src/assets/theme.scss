@@ -1,13 +1,9 @@
-@use "sass:color";
+@use "@picocss/pico/scss/pico" with (
+  $theme-color: "pumpkin"
+);
 
-$primary-hue: 20 !default;
-
-@import "@picocss/pico/scss/pico";
-
-:root[data-theme="dark"] {
+:root {
   --max-picture-height: 600px;
-  --card-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%);
-  --header-background-color: #{color.mix($black, $grey-900, 55%)};
 }
 
 a:is([aria-current]) {
@@ -15,21 +11,21 @@ a:is([aria-current]) {
 }
 
 h1 {
-  --typography-spacing-vertical: 1.5rem;
+  --pico-typography-spacing-vertical: 1.5rem;
 }
 
 h2 {
-  --typography-spacing-vertical: 1.125rem;
+  --pico-typography-spacing-vertical: 1.125rem;
 }
 
 h3 {
-  --typography-spacing-vertical: 0.75rem;
+  --pico-typography-spacing-vertical: 0.75rem;
 }
 
 h4 {
-  --typography-spacing-vertical: 0.374rem;
+  --pico-typography-spacing-vertical: 0.374rem;
 }
 
 h5 {
-  --typography-spacing-vertical: 0.1875rem;
+  --pico-typography-spacing-vertical: 0.1875rem;
 }
