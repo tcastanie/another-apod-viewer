@@ -31,7 +31,7 @@
     "postcss-html": "1.6.0",
     "prettier": "3.2.5",
     "rollup-plugin-visualizer": "5.12.0",
-    "sass": "1.70.0",
+    "sass": "1.71.0",
     "stylelint": "16.2.1",
     "stylelint-config-idiomatic-order": "10.0.0",
     "stylelint-config-recommended-scss": "14.0.0",
