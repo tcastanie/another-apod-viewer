@@ -13,7 +13,7 @@
     />
     <div class="headings">
       <h1>{{ apod.title }}</h1>
-      <h2>{{ apod.date }}</h2>
+      <p>{{ formatDateToEn(apod.date) }}</p>
     </div>
     <div class="c-apod-viewer__description"></div>
     <div class="c-apod-viewer__copyright"></div>
@@ -87,6 +87,10 @@ export default {
           this.errorMessage = error;
           this.loading = false;
         });
+    },
+    formatDateToEn(dateString) {
+      const date = new Date(dateString);
+      return new Intl.DateTimeFormat("en-GB").format(date);
     },
   },
 };
