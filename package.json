@@ -38,7 +38,7 @@
     "stylelint-config-recommended-vue": "1.5.0",
     "stylelint-config-standard-scss": "13.1.0",
     "stylelint-order": "6.0.4",
-    "vite": "5.2.10",
+    "vite": "5.2.11",
     "vitest": "1.5.2",
     "vitest-fetch-mock": "0.2.2"
   }
