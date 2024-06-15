@@ -1,8 +1,12 @@
-# Nuxt UI Minimal Starter
+# Another-APOD-viewer
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+![another-apod-viewer](./project/social.png)
 
-## Setup
+Version 2 of the another-apod-viewer using Nuxt and Nuxt UI, with simpler code. This time the API calls are proxied 💪
+
+Version 1 is in `v1` branch.
+
+## ![favicon](./project/favicon.24.png)&nbsp; Setup
 
 Make sure to install the dependencies:
 
@@ -10,7 +14,7 @@ Make sure to install the dependencies:
 pnpm install
 ```
 
-## Development Server
+## ![favicon](./project/favicon.24.png)&nbsp;  Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -18,7 +22,7 @@ Start the development server on `http://localhost:3000`:
 pnpm run dev
 ```
 
-## Production
+## ![favicon](./project/favicon.24.png)&nbsp;  Production
 
 Build the application for production:
 
@@ -32,4 +36,11 @@ Locally preview production build:
 pnpm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## ![favicon](./project/favicon.24.png)&nbsp; Linter
+
+```bash
+pnpm run lint
+pnpm run lint:fix
+```
+
+Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
