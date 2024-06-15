@@ -1,5 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`ApodViewer > renders properly 1`] = `"<article data-v-4320971b=\\"\\" aria-busy=\\"true\\" class=\\"c-loading\\">Loading...</article>"`;
-
-exports[`ApodViewer > renders properly 2`] = `"<article data-v-4320971b=\\"\\" aria-busy=\\"true\\" class=\\"c-loading\\">Loading...</article>"`;

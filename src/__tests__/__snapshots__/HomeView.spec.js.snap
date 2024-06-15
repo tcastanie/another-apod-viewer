@@ -1,6 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`HomeView > renders properly 1`] = `
-"<apod-viewer-stub></apod-viewer-stub>
-<a href=\\"/2023-08-16\\" class=\\"\\">Previous</a>"
-`;
