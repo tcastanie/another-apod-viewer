@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`SearchView > renders properly 1`] = `
-"<h1>Search</h1>
-<search-input-stub></search-input-stub>
-<search-list-stub list=\\"\\"></search-list-stub>"
-`;

@@ -1,9 +1,8 @@
 {
-  "scss.validate": false,
-  "eslint.validate": ["javascript"],
-  "stylelint.validate": ["vue", "css", "scss"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
+  "files.associations": {
+    "*.css": "tailwindcss"
   },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
