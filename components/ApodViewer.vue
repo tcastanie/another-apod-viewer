@@ -22,9 +22,9 @@ const openImage = async (url?: string) => {
       <pre class="max-w-full overflow-x-hidden">{{ JSON.stringify(data, null, 2) }}</pre>
     </DevOnly>
     <UAlert
-      v-if="error?.data"
-      :title="'Error ' + error.data.code"
-      :description="error.data.msg"
+      v-if="error"
+      :title="'Error ' + error"
+      :description="error.message"
       icon="i-ph-warning-octagon"
       color="red"
       variant="outline"

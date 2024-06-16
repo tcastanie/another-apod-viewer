@@ -4,9 +4,9 @@
 import { joinURL, withQuery } from 'ufo'
 
 export default defineEventHandler(async (event) => {
-  const apiKey = useRuntimeConfig().nasaApodKey
-  const apiBase = useRuntimeConfig().nasaApodBase
+  const { nasaApodKey } = useRuntimeConfig(event)
+  const { nasaApodBase } = useRuntimeConfig(event)
   const path = event.path.replace('/api/apod', '')
-  const target = withQuery(joinURL(apiBase, path), { api_key: apiKey })
+  const target = withQuery(joinURL(nasaApodBase, path), { api_key: nasaApodKey || 'DEMO_KEY' })
   return proxyRequest(event, target)
 })
