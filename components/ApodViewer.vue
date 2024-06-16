@@ -47,14 +47,14 @@ const openImage = async (url?: string) => {
       <div class="mb-3 text-sm/6 font-semibold text-primary flex items-center gap-1.5">
         {{ formattedFullDate }}
       </div>
-      <TheH1>{{ data?.title }}</TheH1>
-      <TheP v-if="data?.explanation" class="mt-4">
+      <UiH1>{{ data?.title }}</UiH1>
+      <UiP v-if="data?.explanation" class="mt-4">
         {{ data.explanation }}
-      </TheP>
-      <TheP v-if="data?.copyright" class="mt-4 flex items-center ring-1 ring-gray-800 rounded w-fit px-2">
+      </UiP>
+      <UiP v-if="data?.copyright" class="mt-4 flex items-center ring-1 ring-gray-800 rounded w-fit px-2">
         <UIcon name="i-ph-copyright" class="inline-block mr-2" />
         <span>{{ data.copyright }}</span>
-      </TheP>
+      </UiP>
     </div>
   </div>
 </template>
