@@ -18,16 +18,17 @@ const openImage = async (url?: string) => {
 
 <template>
   <div class="flex flex-col gap-8">
-    <DevOnly v-if="0">
-      <pre class="max-w-full overflow-x-hidden">{{ JSON.stringify(data, null, 2) }}</pre>
+    <DevOnly>
+      <pre class="max-w-full overflow-x-auto">{{ JSON.stringify(data, null, 2) }}</pre>
     </DevOnly>
     <UAlert
       v-if="error"
-      :title="'Error ' + error"
-      :description="error.message"
+      :title="`Error ${error.statusCode} ${error.statusMessage}`"
+      :description="JSON.stringify(error.data, null, 4)"
       icon="i-ph-warning-octagon"
       color="red"
-      variant="outline"
+      variant="subtle"
+      :ui="{ description: 'whitespace-pre font-mono' }"
     />
     <template v-if="data?.media_type === 'image'">
       <NuxtImg

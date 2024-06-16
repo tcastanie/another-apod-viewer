@@ -7,6 +7,6 @@ export default defineEventHandler(async (event) => {
   const { nasaApodKey } = useRuntimeConfig(event)
   const { nasaApodBase } = useRuntimeConfig(event)
   const path = event.path.replace('/api/apod', '')
-  const target = withQuery(joinURL(nasaApodBase, path), { api_key: nasaApodKey || 'DEMO_KEY' })
+  const target = withQuery(joinURL(nasaApodBase, path), { api_key: nasaApodKey })
   return proxyRequest(event, target)
 })
