@@ -33,7 +33,6 @@ const openImage = async (url?: string) => {
       <NuxtImg
         :src="data.url"
         :alt="data.title"
-        class="max-h-[650px]"
         :class="[{ 'cursor-pointer': data?.hdurl }, 'mx-auto rounded-md']"
         @click="openImage(data.hdurl)"
       />
