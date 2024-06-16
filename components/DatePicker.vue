@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { DatePicker as VDatePicker } from 'v-calendar'
-import type { DatePickerDate } from 'v-calendar/dist/types/src/use/datePicker.js'
 import 'v-calendar/dist/style.css'
 
 const { modelValue } = defineProps<{
-  modelValue: DatePickerDate
+  modelValue: Date
 }>()
 
 const emit = defineEmits<{
-  'update:model-value': [DatePickerDate]
+  'update:model-value': [Date]
   'close': []
 }>()
 

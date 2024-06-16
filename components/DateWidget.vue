@@ -41,7 +41,7 @@ const { prevDay, nextDay, prevDisabled, nextDisabled, handleButtonClick } = useB
       icon="i-ph-arrow-right"
       color="gray"
       trailing
-      :to="`/${nextDay.format('YYYY-MM-DD')}`"
+      :to="`/${nextDay.isToday() ? '' : nextDay.format('YYYY-MM-DD')}`"
       :disabled="nextDisabled"
       :class="{ 'cursor-not-allowed opacity-50': nextDisabled }"
       :loading="nextLoading"
