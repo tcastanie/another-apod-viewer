@@ -41,7 +41,7 @@ const openImage = async (url?: string) => {
     <iframe
       v-else-if="data?.media_type === 'video'"
       :src="data.url"
-      class="w-full rounded-md h-[650px]"
+      class="w-full rounded-md h-[350px] xl:h-[650px]"
     />
     <div class="flex flex-col">
       <div class="mb-3 text-sm/6 font-semibold text-primary flex items-center gap-1.5">
