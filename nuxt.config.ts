@@ -6,9 +6,19 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   app: {
+    head: {
+      link: [{ rel: 'author', href: 'https://tcastanie.dev' }],
+    },
     pageTransition: { name: 'page', mode: 'out-in' },
   },
-  modules: ['@nuxt/ui', '@nuxt/eslint', '@vueuse/nuxt', 'dayjs-nuxt', '@nuxt/image'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    'dayjs-nuxt',
+    '@nuxt/image',
+    '@nuxtjs/seo',
+  ],
   routeRules: {
     // '/': { swr: 3600 * 8 },
     // '/**': { swr: true },
@@ -28,5 +38,14 @@ export default defineNuxtConfig({
   },
   dayjs: {
     plugins: ['customParseFormat', 'isToday'],
+  },
+  site: {
+    url: 'https://apod.tcastanie.dev',
+    name: 'Another APOD viewer',
+    description: 'Simple APOD viewer nuxt app',
+    defaultLocale: 'en',
+  },
+  ogImage: {
+    enabled: false,
   },
 })

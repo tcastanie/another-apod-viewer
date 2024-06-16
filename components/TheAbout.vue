@@ -22,7 +22,18 @@ defineEmits(['close'])
       </div>
     </template>
     <UiP class="flex items-center">
-      Simple APOD viewer app made with 💪 by
+      Simple APOD viewer app made with
+      <UTooltip text="Nuxt" :popper="{ placement: 'top' }">
+        <UIcon name="i-vscode-icons-file-type-nuxt" dynamic class="mx-2" />
+      </UTooltip>
+      and
+      <UTooltip class="mx-2" :popper="{ placement: 'top' }">
+        <template #text>
+          😎
+        </template>
+        💪
+      </UTooltip>
+      by
       <UButton
         to="https://tcastanie.dev"
         target="_blank"
