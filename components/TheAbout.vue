@@ -21,13 +21,13 @@ defineEmits(['close'])
         />
       </div>
     </template>
-    <UiP class="flex items-center">
+    <UiP>
       Simple APOD viewer app made with
-      <UTooltip text="Nuxt" :popper="{ placement: 'top' }">
-        <UIcon name="i-vscode-icons-file-type-nuxt" dynamic class="mx-2" />
+      <UTooltip text="Nuxt" :popper="{ placement: 'top' }" class="align-text-bottom">
+        <UIcon name="i-vscode-icons-file-type-nuxt" dynamic class="w-6 h-6" />
       </UTooltip>
       and
-      <UTooltip class="mx-2" :popper="{ placement: 'top' }">
+      <UTooltip class="align-text-bottom" :popper="{ placement: 'top' }">
         <template #text>
           😎
         </template>
