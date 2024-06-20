@@ -45,9 +45,6 @@ export default defineNuxtConfig({
     description: 'Simple APOD viewer nuxt app',
     defaultLocale: 'en',
   },
-  seo: {
-    redirectToCanonicalSiteUrl: true,
-  },
   ogImage: {
     enabled: false,
   },
