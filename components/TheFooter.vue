@@ -4,11 +4,11 @@ const modalAbout = ref(false)
 
 <template>
   <footer class="bg-gray-900 fixed bottom-0 w-full">
-    <div class="px-4 sm:px-6 lg:px-8 py-2 lg:py-4 lg:flex lg:items-center lg:justify-between lg:gap-x-3">
-      <div class="flex items-center justify-center lg:order-2">
+    <div class="px-4 sm:px-6 lg:px-8 py-2 lg:py-4 md:flex md:items-center md:justify-between sm:gap-x-3">
+      <div class="flex items-center justify-center md:order-2">
         <DateWidget />
       </div>
-      <div class="mt-3 lg:mt-0 flex items-center justify-center lg:justify-start lg:flex-1 gap-x-4 lg:order-1">
+      <div class="mt-0 flex items-center justify-center md:justify-start md:flex-1 gap-x-4 md:order-1">
         <NuxtLink to="/" class="text-xl">
           Another APOD viewer
         </NuxtLink>
@@ -18,11 +18,11 @@ const modalAbout = ref(false)
           color="gray"
           @click="modalAbout = true"
         />
-        <UModal v-model="modalAbout" :ui="{ width: 'sm:max-w-3xl' }">
+        <UModal v-model="modalAbout" :ui="{ width: 'md:max-w-3xl' }">
           <TheAbout @close="modalAbout = false" />
         </UModal>
       </div>
-      <div class="mt-0 lg:flex-1 flex items-center justify-center lg:justify-end gap-x-1.5 lg:order-3">
+      <div class="mt-0 hidden md:flex md:flex-1 items-center justify-center md:justify-end gap-x-1.5 md:order-3">
         <UButton
           icon="i-ph-github-logo-bold"
           color="gray"

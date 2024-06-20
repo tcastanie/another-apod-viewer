@@ -48,6 +48,18 @@ defineEmits(['close'])
       </UButton>
     </UiP>
     <UiP class="mt-2">
+      Code :
+      <UButton
+        size="xl"
+        variant="link"
+        :padded="false"
+        to="https://github.com/tcastanie/another-apod-viewer"
+        target="_blank"
+      >
+        github.com/tcastanie/another-apod-viewer
+      </UButton>
+    </UiP>
+    <UiP class="mt-2">
       Original website :
       <UButton
         size="xl"
@@ -56,7 +68,7 @@ defineEmits(['close'])
         to="https://apod.nasa.gov"
         target="_blank"
       >
-        http://apod.nasa.gov
+        apod.nasa.gov
       </UButton>
     </UiP>
     <UiH2 class="mt-8">

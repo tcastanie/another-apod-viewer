@@ -18,12 +18,12 @@ export const useDateWidget = () => {
   // date display
   const { language } = useNavigatorLanguage()
   const formattedDate = computed(() => {
-    return new Intl.DateTimeFormat(language.value).format(date.value)
+    return new Intl.DateTimeFormat(language.value || 'fr').format(date.value)
   })
 
   const formattedFullDate = computed(() => {
     const options: Intl.DateTimeFormatOptions = { dateStyle: 'full' }
-    const dateFull = new Intl.DateTimeFormat(language.value, options).format(date.value)
+    const dateFull = new Intl.DateTimeFormat(language.value || 'fr', options).format(date.value)
     return dateFull.charAt(0).toUpperCase() + dateFull.slice(1)
   })
 
