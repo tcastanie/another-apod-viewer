@@ -2,7 +2,7 @@
 import { DatePicker as VDatePicker } from 'v-calendar'
 import 'v-calendar/dist/style.css'
 
-const { modelValue } = defineProps<{
+const props = defineProps<{
   modelValue: Date
 }>()
 
@@ -12,7 +12,7 @@ const emit = defineEmits<{
 }>()
 
 const date = computed({
-  get: () => modelValue,
+  get: () => props.modelValue,
   set: (value) => {
     emit('update:model-value', value)
     emit('close')
@@ -22,6 +22,7 @@ const date = computed({
 const attrs = {
   'transparent': true,
   'borderless': true,
+  'trim-weeks': true,
   'color': 'primary',
   'is-dark': { selector: 'html', darkClass: 'dark' },
   'first-day-of-week': 2,
@@ -30,8 +31,14 @@ const attrs = {
 
 <template>
   <VDatePicker v-model="date" v-bind="{ ...attrs, ...$attrs }">
-    <template #footer>
-      <UButton variant="ghost" block @click="date = new Date()">
+    <template v-if="!$dayjs(date).isToday()" #footer>
+      <UButton
+        icon="i-ph-arrow-right"
+        trailing
+        block
+        variant="ghost"
+        @click="date = new Date()"
+      >
         Today
       </UButton>
     </template>
