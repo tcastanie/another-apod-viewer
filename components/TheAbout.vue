@@ -54,10 +54,11 @@ defineEmits(['close'])
         variant="link"
         :padded="false"
         to="https://github.com/tcastanie/another-apod-viewer"
+        icon="i-ph-github-logo-duotone"
+        trailing
         target="_blank"
-      >
-        github.com/tcastanie/another-apod-viewer
-      </UButton>
+        label="another-apod-viewer"
+      />
     </UiP>
     <UiP class="mt-2">
       Original website :
@@ -67,9 +68,10 @@ defineEmits(['close'])
         :padded="false"
         to="https://apod.nasa.gov"
         target="_blank"
-      >
-        apod.nasa.gov
-      </UButton>
+        icon="i-ph-globe-simple-duotone"
+        trailing
+        label="apod.nasa.gov"
+      />
     </UiP>
     <UiH2 class="mt-8">
       Acknowledgement
@@ -88,6 +90,7 @@ defineEmits(['close'])
         :padded="false"
         to="https://www.nasa.gov/nasa-brand-center/images-and-media/"
         target="_blank"
+        class="inline"
       >
         official guidelines for their use can be found here
       </UButton>.

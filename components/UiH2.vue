@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-xl font-semibold truncate">
+  <h2 class="text-xl font-semibold truncate text-balance">
     <slot />
   </h2>
 </template>
