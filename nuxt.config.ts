@@ -37,7 +37,9 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
   },
-
+  icon: {
+    serverBundle: 'remote',
+  },
   dayjs: {
     plugins: ['customParseFormat', 'isToday'],
   },
