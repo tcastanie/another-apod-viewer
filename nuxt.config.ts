@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     nasaApodBase: 'https://api.nasa.gov/planetary/apod',
   },
   devtools: { enabled: true },
+  compatibilityDate: '2024-07-28',
   app: {
     head: {
       link: [{ rel: 'author', href: 'https://tcastanie.dev' }],
@@ -33,9 +34,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
   },
-  ui: {
-    icons: ['ph'],
-  },
+
   dayjs: {
     plugins: ['customParseFormat', 'isToday'],
   },

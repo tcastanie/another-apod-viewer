@@ -24,7 +24,7 @@ defineEmits(['close'])
     <UiP>
       Simple APOD viewer app made with
       <UTooltip text="Nuxt" :popper="{ placement: 'top' }" class="align-text-bottom">
-        <UIcon name="i-vscode-icons-file-type-nuxt" dynamic class="w-6 h-6" />
+        <UIcon name="i-vscode-icons-file-type-nuxt" class="w-6 h-6" />
       </UTooltip>
       and
       <UTooltip class="align-text-bottom" :popper="{ placement: 'top' }">
