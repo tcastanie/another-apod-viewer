@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   compatibilityDate: '2024-07-28',
+  future: {
+    compatibilityVersion: 4,
+  },
   app: {
     head: {
       link: [{ rel: 'author', href: 'https://tcastanie.dev' }],
