@@ -6,7 +6,7 @@ const modalAbout = ref(false)
   <footer class="bg-gray-900 fixed bottom-0 w-full">
     <div class="px-4 sm:px-6 lg:px-8 py-2 lg:py-4 md:flex md:items-center md:justify-between sm:gap-x-3">
       <div class="flex items-center justify-center md:order-2">
-        <DateWidget />
+        <LazyDateWidget hydrate-on-idle />
       </div>
       <div class="mt-0 flex items-center justify-center md:justify-start md:flex-1 gap-x-4 md:order-1">
         <NuxtLink to="/" class="text-xl">

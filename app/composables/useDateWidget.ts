@@ -1,5 +1,9 @@
+import isToday from 'dayjs/plugin/isToday'
+
 export const useDateWidget = () => {
   const dayjs = useDayjs()
+  dayjs.extend(isToday)
+
   const route = useRoute()
 
   const { datePickerLoading } = useLoadings()

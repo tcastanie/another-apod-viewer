@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { DatePicker as VDatePicker } from 'v-calendar'
+import isToday from 'dayjs/plugin/isToday'
 import 'v-calendar/dist/style.css'
+
+const dayjs = useDayjs()
+dayjs.extend(isToday)
 
 const props = defineProps<{
   modelValue: Date
@@ -22,7 +26,7 @@ const date = computed({
 const attrs = {
   'transparent': true,
   'borderless': true,
-  'trim-weeks': true,
+  'trim-weeks': false,
   'color': 'primary',
   'is-dark': { selector: 'html', darkClass: 'dark' },
   'first-day-of-week': 2,
@@ -31,7 +35,7 @@ const attrs = {
 
 <template>
   <VDatePicker v-model="date" v-bind="{ ...attrs, ...$attrs }">
-    <template v-if="!$dayjs(date).isToday()" #footer>
+    <template v-if="!dayjs(date).isToday()" #footer>
       <UButton
         icon="i-ph-arrow-right"
         trailing
